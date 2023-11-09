@@ -53,7 +53,7 @@ export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <Test>これはTestコンポーネントです</Test>
+        <Test>これはTestコンポーネントです+</Test>
         <p>
           examples/basic&nbsp;
           <code className={styles.code}>docs</code>
