@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "ui";
+import { Card, Hoge } from "ui";
 import styles from "./page.module.css";
 
 function Gradient({
@@ -53,6 +53,7 @@ export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Hoge>これはHogeコンポーネントです</Hoge>
         <p>
           examples/basic&nbsp;
           <code className={styles.code}>web</code>
