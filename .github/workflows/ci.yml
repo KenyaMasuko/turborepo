@@ -1,0 +1,35 @@
+# storybookをビルドしてchromaticにデプロイする
+name: UI Build
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  chromatic_deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          package_json_file: 'package.json'
+
+      - name: Set node 18
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: pnpm
+      - run: pnpm install
+      - run: pnpm storybook
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        id: chromatic
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
