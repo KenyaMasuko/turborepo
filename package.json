@@ -6,7 +6,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
-    "storybook": "turbo run storybook"
+    "storybook": "turbo run build-storybook"
   },
   "devDependencies": {
     "@testing-library/dom": "^9.3.3",
