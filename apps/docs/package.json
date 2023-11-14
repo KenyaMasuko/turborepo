@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "vitest run",
     "storybook:dev": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "storybook build",
     "build:storybook": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN --build-script-name build:storybook --output-dir build/storybook"
   },
   "dependencies": {

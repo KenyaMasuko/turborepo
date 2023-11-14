@@ -8,9 +8,7 @@
     },
     "test": {},
     "lint": {},
-    "build-storybook": {
-      "outputs": ["storybook-static/**"]
-    },
+    "storybook": {},
     "dev": {
       "cache": false,
       "persistent": true
