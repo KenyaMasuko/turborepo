@@ -10,7 +10,7 @@
     "test": "vitest run",
     "storybook:dev": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storybook": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN --build-script-name build:storybook --output-dir build/storybook"
+    "build:storybook": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN --build-script-name build:storybook --output-dir build/storybook"
   },
   "dependencies": {
     "next": "^13.4.19",
