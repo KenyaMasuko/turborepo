@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "storybook:dev": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
+    "storybook": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN --build-script-name build:storybook --output-dir build/storybook"
   },
   "dependencies": {
     "next": "^13.4.19",
@@ -17,10 +20,14 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.19",
+    "@storybook/cli": "^7.5.3",
+    "@storybook/nextjs": "^7.5.3",
+    "@storybook/react": "^7.5.3",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "workspace:*",
+    "storybook": "^7.5.3",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }

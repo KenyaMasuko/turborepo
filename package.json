@@ -5,9 +5,11 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "storybook": "turbo run storybook"
   },
   "devDependencies": {
+    "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "6.1.4",
     "@testing-library/react": "14.1.0",
     "@vitejs/plugin-react": "4.1.1",
@@ -15,11 +17,9 @@
     "jsdom": "22.1.0",
     "prettier": "^3.0.3",
     "tsconfig": "workspace:*",
-    "turbo": "latest"
+    "turbo": "latest",
+    "vitest": "^0.34.6"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "turborepo",
-  "dependencies": {
-    "vitest": "0.34.6"
-  }
+  "name": "turborepo"
 }

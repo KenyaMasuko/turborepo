@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, Test } from "ui";
+import { Card } from "ui";
 import styles from "./page.module.css";
 
 function Gradient({
@@ -53,7 +53,6 @@ export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <Test>これはTestコンポーネントです+</Test>
         <p>
           examples/basic&nbsp;
           <code className={styles.code}>docs</code>
@@ -126,10 +125,8 @@ export default function Page(): JSX.Element {
       </div>
 
       <div className={styles.grid}>
-        {LINKS.map(({ title, href, description }) => (
-          <Card className={styles.card} href={href} key={title} title={title}>
-            {description}
-          </Card>
+        {LINKS.map((link) => (
+          <Card key={link.title} />
         ))}
       </div>
     </main>
