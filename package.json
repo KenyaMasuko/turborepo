@@ -22,7 +22,7 @@
   },
   "packageManager": "pnpm@8.6.10",
   "engines": {
-    "node": "18.17",
+    "node": "18.16",
     "pnpm": "8.6.10"
   },
   "name": "turborepo"
