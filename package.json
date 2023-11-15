@@ -20,10 +20,10 @@
     "turbo": "latest",
     "vitest": "^0.34.6"
   },
-  "packageManager": "pnpm@8.6.10",
   "engines": {
-    "node": "18.16",
+    "node": "18",
     "pnpm": "8.6.10"
   },
+  "packageManager": "pnpm@8.6.10",
   "name": "turborepo"
 }
