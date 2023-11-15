@@ -4,7 +4,7 @@ name: UI Build
 on:
   push:
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   chromatic_deployment:
@@ -18,12 +18,12 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          package_json_file: 'package.json'
+          package_json_file: "package.json"
 
       - name: Set node 18
         uses: actions/setup-node@v3
         with:
-          node-version-file: 'package.json'
+          node-version-file: "package.json"
           cache: pnpm
       - run: pnpm install
 
@@ -32,3 +32,4 @@ jobs:
         id: chromatic
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: "apps/docs"
