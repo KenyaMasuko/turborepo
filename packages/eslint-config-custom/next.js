@@ -13,6 +13,7 @@ const project = resolve(process.cwd(), "tsconfig.json");
 
 module.exports = {
   extends: [
+    "eslint:recommended",
     "@vercel/style-guide/eslint/node",
     "@vercel/style-guide/eslint/browser",
     "@vercel/style-guide/eslint/typescript",
