@@ -15,10 +15,11 @@
     "@vitejs/plugin-react": "4.1.1",
     "eslint": "^8.48.0",
     "jsdom": "22.1.0",
+    "lint-staged": "^13.2.2",
     "prettier": "^3.0.3",
+    "simple-git-hooks": "^2.9.0",
     "tsconfig": "workspace:*",
     "turbo": "latest",
     "vitest": "^0.34.6"
-  },
-  "name": "turborepo"
+  }
 }
