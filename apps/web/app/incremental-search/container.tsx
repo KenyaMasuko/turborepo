@@ -40,6 +40,8 @@ export const Container: React.FC = () => {
   const handleSelect = (value: string) => {
     debounce(() => {
       const params = createQueryString("userId", value);
+      // window.history.pushStateのユースケースいまいち
+      // window.history.pushState(null, "", `${pathname}?${params}`);
       router.push(`${pathname}?${params}`);
     }),
       setUserId(value);

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -44,14 +45,12 @@ export const SearchResult: React.FC<Props> = async ({
     body: string;
   }[];
 
-  // console.log(data);
-
   return (
     <pre>
       {data.map((x) => (
-        <div key={x.id}>
+        <Link key={x.id} href={`/incremental-search/${x.id}`}>
           <pre>{JSON.stringify(x)}</pre>
-        </div>
+        </Link>
       ))}
     </pre>
   );

@@ -21,5 +21,10 @@
     "tsconfig": "workspace:*",
     "turbo": "latest",
     "vitest": "^0.34.6"
-  }
+  },
+  "engines": {
+    "node": "18.17",
+    "pnpm": ">=8.0"
+  },
+  "packageManager": "pnpm@8.1.1"
 }

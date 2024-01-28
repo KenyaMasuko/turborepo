@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^13.4.19",
+    "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "workspace:*"
@@ -22,5 +22,10 @@
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
-  }
+  },
+  "engines": {
+    "node": "18.17",
+    "pnpm": ">=8.0"
+  },
+  "packageManager": "pnpm@8.1.1"
 }
